@@ -15,16 +15,20 @@
 	<style>
 		* { padding: 0; margin: 0; }
 		body { background-color: #566B70; }
-		p { color: #fff; font-family: "brandon-grotesque", Helvetica; font-weight: 500; font-size: 18px; line-height: 28px; margin-bottom: 22px; -webkit-font-smoothing: antialiased;text-shadow: 0 1px 1px #000000; }
-		a { color: #fff; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.3); }
+		p { font-family: "brandon-grotesque", Helvetica; font-size: 18px; line-height: 28px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
+		a { color: #000; text-decoration: underline; border-bottom: 2px solid rgba(255,255,255,0.3); }
 		a:hover { color: #ffcc00; border-bottom: 2px solid rgba(255,255,255,1); }
 		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 50px 0 auto; }
-		#about { width: 360px; padding: 0 0 0 0px; margin: 50px auto 0 50px !important; }
+		#about { width: 300px; padding: 0 0 0 0px;}
+        .name { font-size: 30px; margin-bottom: 10px; }
 		.photo { display: none; }
+        p.intro { font-weight: bold; }
 		@media (min-width: 768px) {
             #about {
-                background: rgba(50, 50, 50, 0.6);
-                padding: 10px;
+                height: 100vh;
+                background: rgba(255, 255, 255, 0.75);
+                padding: 150px 50px 10px 75px;
+                margin: 0px; !important
             }
         }
 		@media (max-width: 767px) {
@@ -39,7 +43,7 @@
 			.backstretch { opacity: 0.2; }
 		}
 	</style>
-	<script type="text/javascript" src="https://use.typekit.com/pxo4crd.js"></script>
+	<script type="text/javascript" src="http://use.typekit.com/pxo4crd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<!-- Google Analytics script -->
@@ -64,10 +68,12 @@
 	<img src="ed_bg.jpg" />
 </p>
 <div id="about">
-	<p>Aline Dreyer is a French native currently exploring & living in London, UK.</p>
+    <p class=name>Aline Dreyer</p>
+	<p class=intro>is a French native currently exploring & living in London, UK.</p>
 	<p>A super keen globe trotter, she is always up for the next adventure, be it a new place to visit or a new experience.</p>
 	<p>She's a fanatic about foreign languages. Other obsessions include baking and cooking, chocolate and cheese, reading, slack lining, hiking, the seaside, crafts, and stickers!</p>
 	<p>You can contact her via her <a href="https://uk.linkedin.com/in/aline-dreyer-02536160">LinkedIn</a> profile, or follow her on <a href="https://www.instagram.com/enilad89/">Instagram</a>.</p>
+    <small>Photo by <a href="https://www.instagram.com/tiomax80/">Tiomax</a>.</small>
 </div>
 
 <!--include jquery & backstretch-->
